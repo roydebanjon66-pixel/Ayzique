@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AYZIQUE — Premium streetwear brand crafting elevated essentials for the modern lifestyle. Drop shoulder tees, oversized fits, premium shirts and more." />
+  <meta name="keywords" content="AYZIQUE, premium streetwear, oversized tees, drop shoulder, luxury fashion, Bangladesh streetwear" />
+  <meta property="og:title" content="AYZIQUE — Elevated Streetwear" />
+  <meta property="og:description" content="Premium oversized essentials crafted for modern lifestyles." />
+  <meta property="og:type" content="website" />
+  <title>AYZIQUE — Elevated Streetwear. Defined By Us.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body>
+
+<!-- ========== LOADER ========== -->
+<div id="loader">
+  <div class="loader-logo">AY<span>Z</span>IQUE</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">AY<span>Z</span>IQUE</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <img src="images/home-hero.png" alt="AYZIQUE Hero — Premium Streetwear Campaign" class="hero-img" />
+  <div class="hero-overlay"></div>
+  <div class="hero-glow"></div>
+
+  <!-- Rotating Circular Seal Badge -->
+  <div class="hero-seal-wrap">
+    <svg viewBox="0 0 100 100" class="hero-seal">
+      <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+      <text font-size="7.5" font-weight="bold" fill="rgba(255,255,255,0.4)" letter-spacing="2.5">
+        <textPath href="#circlePath">PREMIUM QUALITY STREETWEAR • EST 2025 •</textPath>
+      </text>
+    </svg>
+    <div class="hero-seal-inner">✦</div>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="line">Elevated</span>
+      <span class="line">Streetwear.</span>
+      <span class="line accent">Defined By</span>
+      <span class="line">AYZIQUE.</span>
+    </h1>
+    <p class="hero-sub">Premium oversized essentials crafted for modern lifestyles.</p>
+    <div class="hero-actions">
+      <a href="shop.html" class="btn btn-primary"><span>Shop Collection</span></a>
+      <a href="about.html" class="btn btn-outline"><span>Explore Brand</span></a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <span class="hero-scroll-text">Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ========== MARQUEE ========== -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- Duplicated for seamless loop -->
+    <div class="marquee-item">Elevated Essentials <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Premium Quality <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Drop Shoulder <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Oversized Fits <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Defined By AYZIQUE <span class="marquee-dot"></span></div>
+    <div class="marquee-item">New Collection 2025 <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Minimal Luxury <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Modern Streetwear <span class="marquee-dot"></span></div>
+    <!-- Repeat -->
+    <div class="marquee-item">Elevated Essentials <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Premium Quality <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Drop Shoulder <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Oversized Fits <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Defined By AYZIQUE <span class="marquee-dot"></span></div>
+    <div class="marquee-item">New Collection 2025 <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Minimal Luxury <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Modern Streetwear <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- ========== FEATURED CATEGORIES ========== -->
+<section class="section categories-section" id="categories">
+  <div class="section-header reveal">
+    <span class="section-tag">Browse By Category</span>
+    <h2 class="section-title">Our Collections</h2>
+    <p class="section-subtitle">Explore our carefully curated range of premium streetwear essentials.</p>
+  </div>
+  <div class="categories-grid">
+    <a href="shop.html?filter=dropshoulder" class="category-card reveal delay-1">
+      <img src="images/cat-dropshoulder.png" alt="Drop Shoulder T-Shirts" class="category-card-img" />
+      <div class="category-card-overlay">
+        <span class="category-name">Drop Shoulder<br/>T-Shirts</span>
+      </div>
+    </a>
+    <a href="shop.html?filter=oversized" class="category-card reveal delay-2">
+      <img src="images/product-olive.png" alt="Oversized Tees" class="category-card-img" />
+      <div class="category-card-overlay">
+        <span class="category-name">Oversized<br/>Tees</span>
+      </div>
+    </a>
+    <a href="shop.html?filter=shirts" class="category-card reveal delay-3">
+      <img src="images/product-ronaldo.png" alt="Premium Shirts" class="category-card-img" />
+      <div class="category-card-overlay">
+        <span class="category-name">Premium<br/>Shirts</span>
+      </div>
+    </a>
+    <a href="shop.html?filter=pants" class="category-card reveal delay-4">
+      <img src="images/cat-pants.png" alt="Trousers" class="category-card-img" />
+      <div class="category-card-overlay">
+        <span class="category-name">Wide-Leg<br/>Trousers</span>
+      </div>
+    </a>
+    <a href="shop.html?filter=new" class="category-card reveal delay-5">
+      <img src="images/product-neymar.png" alt="New Arrivals" class="category-card-img" />
+      <div class="category-card-overlay">
+        <span class="category-name">New<br/>Arrivals</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ========== COLLECTION SHOWCASE ========== -->
+<section class="section collection-section" id="collection">
+  <div class="section-header reveal">
+    <span class="section-tag">Featured</span>
+    <h2 class="section-title">The Collection</h2>
+  </div>
+  <div class="collection-grid">
+    <a href="shop.html" class="collection-featured reveal-scale">
+      <img src="images/about-brand.png" alt="AYZIQUE Featured Collection" class="collection-img" />
+      <div class="collection-overlay">
+        <span class="collection-tag">Signature Series</span>
+        <h3 class="collection-name">The Essential<br/>Black Collection</h3>
+        <div class="collection-arrow">→</div>
+      </div>
+    </a>
+    <a href="shop.html?filter=dropshoulder" class="collection-item reveal delay-1">
+      <img src="images/product-dropshoulder.png" alt="Drop Shoulder T-Shirts" class="collection-img" />
+      <div class="collection-overlay">
+        <span class="collection-tag">Drop Shoulder</span>
+        <h3 class="collection-name">Premium Oversized Tees</h3>
+        <div class="collection-arrow">→</div>
+      </div>
+    </a>
+    <a href="shop.html?filter=shirts" class="collection-item reveal delay-2">
+      <img src="images/product-shirt.png" alt="Premium Shirts" class="collection-img" />
+      <div class="collection-overlay">
+        <span class="collection-tag">Shirts</span>
+        <h3 class="collection-name">Minimal Button-Ups</h3>
+        <div class="collection-arrow">→</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ========== FEATURED PRODUCTS (VINTAGE SERIES) ========== -->
+<section class="section featured-products-section" id="featured-products" style="background:var(--black-2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="section-header reveal" style="text-align:center; margin-bottom:4rem;">
+    <span class="section-tag" style="color:var(--mint);">Exclusive Drop</span>
+    <h2 class="section-title" style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3.2rem); font-weight:800; letter-spacing:-0.03em;">Football Vintage Series</h2>
+    <p class="section-subtitle" style="color:var(--white-muted); max-width:500px; margin:1rem auto 0; font-size:0.92rem;">Limited edition 240+ GSM wash mockups celebrating football legends.</p>
+  </div>
+  
+  <div style="padding:0 5%;">
+    <div class="product-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2.5rem; max-width:1200px; margin:0 auto;">
+      
+      <!-- Neymar -->
+      <div class="product-card reveal delay-1"
+           data-category="vintage dropshoulder new"
+           data-product="Neymar Jr &quot;LOYALTY&quot; Vintage Bootleg Tee"
+           data-price="৳1,499"
+           data-sizes="S,M,L,XL,XXL">
+        <div class="product-img-wrap">
+          <img src="images/product-neymar.png" alt="Neymar Jr Vintage Tee" class="product-img" />
+          <div class="product-badge badge-new">New Release</div>
+          <div class="product-quick-view">
+            <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+            <button class="product-quick-btn quick-email">✉ Email</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Vintage Tee</div>
+          <div class="product-name">Neymar Jr "LOYALTY" Vintage Tee</div>
+          <div class="product-sizes" style="margin-bottom:0.8rem;">
+            <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+          </div>
+          <div class="product-price-row">
+            <div class="product-price"><span class="currency">৳</span>1,499</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ronaldo -->
+      <div class="product-card reveal delay-2"
+           data-category="vintage dropshoulder new"
+           data-product="Ronaldo &quot;CR7&quot; Vintage Bootleg Tee"
+           data-price="৳1,499"
+           data-sizes="S,M,L,XL,XXL">
+        <div class="product-img-wrap">
+          <img src="images/product-ronaldo.png" alt="Ronaldo Vintage Tee" class="product-img" />
+          <div class="product-badge badge-new">Trending</div>
+          <div class="product-quick-view">
+            <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+            <button class="product-quick-btn quick-email">✉ Email</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Vintage Tee</div>
+          <div class="product-name">Ronaldo "CR7" Vintage Tee</div>
+          <div class="product-sizes" style="margin-bottom:0.8rem;">
+            <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+          </div>
+          <div class="product-price-row">
+            <div class="product-price"><span class="currency">৳</span>1,499</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messi -->
+      <div class="product-card reveal delay-3"
+           data-category="vintage dropshoulder new"
+           data-product="Messi &quot;10&quot; Vintage Bootleg Tee"
+           data-price="৳1,499"
+           data-sizes="S,M,L,XL,XXL">
+        <div class="product-img-wrap">
+          <img src="images/product-messi.png" alt="Messi Vintage Tee" class="product-img" />
+          <div class="product-badge badge-new">Limited</div>
+          <div class="product-quick-view">
+            <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+            <button class="product-quick-btn quick-email">✉ Email</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Vintage Tee</div>
+          <div class="product-name">Messi "10" Vintage Tee</div>
+          <div class="product-sizes" style="margin-bottom:0.8rem;">
+            <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+          </div>
+          <div class="product-price-row">
+            <div class="product-price"><span class="currency">৳</span>1,499</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div style="text-align:center; margin-top:4rem;" class="reveal">
+      <a href="shop.html?filter=vintage" class="btn btn-outline"><span>View Full Catalog</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BRAND STORY PREVIEW ========== -->
+<section class="section brand-preview-section" id="story">
+  <div class="brand-preview-inner">
+    <div class="brand-preview-text reveal-left">
+      <span class="section-tag">Our Story</span>
+      <div class="mint-divider" style="background:var(--mint); height:2px; width:40px; margin:1rem 0 2rem;"></div>
+      <h2 class="section-title" style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:800; letter-spacing:-0.03em; margin-bottom:1.5rem; line-height:1.2;">BUILT ON VISION,<br/>DRIVEN BY PASSION.</h2>
+      <p class="brand-preview-desc" style="font-size:0.95rem; color:var(--white-muted); line-height:1.8; margin-bottom:2rem; max-width:450px;">
+        AYZIQUE is more than just a brand. It's a movement towards individuality, confidence and timeless style.
+      </p>
+      <a href="about.html" style="font-size:0.75rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--white); text-decoration:underline; transition:var(--transition-fast);">Read Our Story</a>
+    </div>
+    
+    <div class="brand-preview-visual reveal-right">
+      <img src="images/story-brand.png" alt="AYZIQUE Brand Story" class="brand-preview-img" style="aspect-ratio:16/10; object-fit:cover; border-radius:var(--radius); border:1px solid var(--border);" />
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="section-sm" style="background:var(--black-2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--border); border:1px solid var(--border);">
+    <div class="reveal delay-1" style="background:var(--black-2); padding:2.5rem 2rem; text-align:center;">
+      <div style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--mint); line-height:1;">500+</div>
+      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray); margin-top:0.5rem;">Happy Clients</div>
+    </div>
+    <div class="reveal delay-2" style="background:var(--black-2); padding:2.5rem 2rem; text-align:center;">
+      <div style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--mint); line-height:1;">30+</div>
+      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray); margin-top:0.5rem;">Designs Released</div>
+    </div>
+    <div class="reveal delay-3" style="background:var(--black-2); padding:2.5rem 2rem; text-align:center;">
+      <div style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--mint); line-height:1;">100%</div>
+      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray); margin-top:0.5rem;">Premium Quality</div>
+    </div>
+    <div class="reveal delay-4" style="background:var(--black-2); padding:2.5rem 2rem; text-align:center;">
+      <div style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--mint); line-height:1;">2025</div>
+      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray); margin-top:0.5rem;">New Collection</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section testimonials-section" id="testimonials">
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:3rem; flex-wrap:wrap; gap:1.5rem;">
+    <div class="reveal">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+    </div>
+    <div class="slider-controls reveal delay-2">
+      <button class="slider-btn prev" aria-label="Previous">←</button>
+      <div class="slider-dots">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+      </div>
+      <button class="slider-btn next" aria-label="Next">→</button>
+    </div>
+  </div>
+
+  <div class="testimonials-slider">
+    <div class="testimonials-track">
+      <!-- Slide 1 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-card glass-card reveal delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The drop shoulder tee I ordered is absolutely premium. The fit, the fabric, the finish — everything screams luxury. Finally a local brand that delivers international quality."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Rafiq Ahmed</div>
+              <div class="testimonial-location">Dhaka, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card reveal delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"AYZIQUE is on another level. I've worn Fear of God and Essentials — this brand stands right alongside them. The oversized tee is my go-to every single day."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Samin Hossain</div>
+              <div class="testimonial-location">Chittagong, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card reveal delay-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered via WhatsApp — super easy process and the delivery was fast. The shirt quality is incredible. Already ordered a second piece. AYZIQUE is the real deal."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">N</div>
+            <div>
+              <div class="testimonial-name">Nusrat Jahan</div>
+              <div class="testimonial-location">Sylhet, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The trousers are exactly what I was looking for — wide leg, premium fabric, perfect drape. AYZIQUE understands what modern style means. 10/10 would recommend."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">Tanvir Hasan</div>
+              <div class="testimonial-location">Rajshahi, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I gifted an AYZIQUE set to my friend and he couldn't stop complimenting it. The packaging alone felt premium. This brand has a serious future ahead."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Arif Islam</div>
+              <div class="testimonial-location">Comilla, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The minimal designs are exactly my style. I've been searching for a brand like AYZIQUE. Clean, bold, premium — nothing extra, nothing missing. Perfect."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">F</div>
+            <div>
+              <div class="testimonial-name">Farhan Uddin</div>
+              <div class="testimonial-location">Khulna, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INSTAGRAM GALLERY ========== -->
+<section class="section gallery-section" id="gallery">
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:3rem; flex-wrap:wrap; gap:1.5rem;">
+    <div class="reveal">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title">The AYZIQUE Edit</h2>
+    </div>
+    <a href="lookbook.html" class="btn btn-ghost reveal delay-2"><span>View Lookbook →</span></a>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item reveal-scale delay-1">
+      <div class="gallery-img-bg" style="background-image:url('images/product-olive.png'); background-size:cover; background-position:center top; width:100%; height:100%;"></div>
+      <div class="gallery-overlay"><div class="gallery-icon">⊕</div></div>
+    </div>
+    <div class="gallery-item reveal-scale delay-2">
+      <div class="gallery-img-bg" style="background-image:url('images/product-hoodie.png'); background-size:cover; background-position:center top; width:100%; height:100%;"></div>
+      <div class="gallery-overlay"><div class="gallery-icon">⊕</div></div>
+    </div>
+    <div class="gallery-item reveal-scale delay-3">
+      <div class="gallery-img-bg" style="background-image:url('images/product-linen.png'); background-size:cover; background-position:center top; width:100%; height:100%;"></div>
+      <div class="gallery-overlay"><div class="gallery-icon">⊕</div></div>
+    </div>
+    <div class="gallery-item reveal-scale delay-4">
+      <div class="gallery-img-bg" style="background-image:url('images/product-cargo.png'); background-size:cover; background-position:center; width:100%; height:100%;"></div>
+      <div class="gallery-overlay"><div class="gallery-icon">⊕</div></div>
+    </div>
+    <div class="gallery-item reveal-scale delay-5">
+      <div class="gallery-img-bg" style="background-image:url('images/product-dropshoulder.png'); background-size:cover; background-position:center; width:100%; height:100%;"></div>
+      <div class="gallery-overlay"><div class="gallery-icon">⊕</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="section cta-section" id="cta">
+  <div class="cta-tag reveal">— AYZIQUE —</div>
+  <h2 class="cta-title reveal delay-1">Built For Those<br/><em style="font-style:italic;color:var(--mint);">Who Stand Apart.</em></h2>
+  <p class="cta-desc reveal delay-2">Join the movement. Wear the difference. Define your own standard.</p>
+  <div class="cta-actions reveal delay-3">
+    <a href="shop.html" class="btn btn-primary"><span>Shop Now</span></a>
+    <a href="contact.html" class="btn btn-outline"><span>Get in Touch</span></a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">AY<span>Z</span>IQUE</div>
+      <p class="footer-desc">Premium streetwear brand crafting elevated essentials for the modern individual. Where luxury meets the street.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="https://wa.me/8801XXXXXXXXX" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Shop</div>
+      <ul>
+        <li><a href="shop.html?filter=dropshoulder">Drop Shoulder</a></li>
+        <li><a href="shop.html?filter=oversized">Oversized Tees</a></li>
+        <li><a href="shop.html?filter=shirts">Premium Shirts</a></li>
+        <li><a href="shop.html?filter=pants">Trousers</a></li>
+        <li><a href="shop.html?filter=new">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Brand</div>
+      <ul>
+        <li><a href="about.html">About AYZIQUE</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="about.html#story">Our Story</a></li>
+        <li><a href="about.html#values">Our Values</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp Order</a></li>
+        <li><a href="mailto:orders@ayzique.com">Email Order</a></li>
+        <li><a href="contact.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AYZIQUE. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Place Your Order</h2>
+      <button class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-product-name">Product Name</div>
+    <div class="form-group">
+      <label class="form-label" for="orderName">Your Full Name *</label>
+      <input class="form-input" type="text" id="orderName" placeholder="Enter your full name" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderPhone">Phone Number *</label>
+      <input class="form-input" type="tel" id="orderPhone" placeholder="+880 XXXX XXXXXX" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderSize">Select Size *</label>
+      <select class="form-input form-select" id="orderSize">
+        <option value="">Select Size</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderQty">Quantity</label>
+      <input class="form-input" type="number" id="orderQty" min="1" max="10" value="1" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderNotes">Delivery Address / Notes</label>
+      <textarea class="form-input form-textarea" id="orderNotes" placeholder="Your delivery address and any special notes..."></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-whatsapp" id="sendWhatsapp"><span>📲 Order via WhatsApp</span></button>
+      <button class="btn btn-email" id="sendEmail"><span>✉ Order via Email</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

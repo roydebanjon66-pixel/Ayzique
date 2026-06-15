@@ -1,0 +1,332 @@
+/* ============================================================
+   AYZIQUE — Shop Page Styles
+   ============================================================ */
+
+/* ---- SHOP HERO ---- */
+.shop-hero {
+  background: var(--black-2);
+  padding: 10rem 5% 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-hero::before {
+  content: 'SHOP';
+  position: absolute;
+  right: -2%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 18vw, 16rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.02);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.shop-hero-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--mint);
+  margin-bottom: 1rem;
+}
+
+.shop-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+}
+
+.shop-hero-sub {
+  font-size: 1rem;
+  color: var(--white-muted);
+  margin-top: 1rem;
+  max-width: 450px;
+  line-height: 1.7;
+}
+
+/* ---- FILTER BAR ---- */
+.filter-bar {
+  position: sticky;
+  top: 72px;
+  z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filter-tabs::-webkit-scrollbar { display: none; }
+
+.filter-tab {
+  padding: 1.2rem 1.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  background: none;
+}
+
+.filter-tab:hover { color: var(--white); }
+.filter-tab.active { color: var(--mint); border-bottom-color: var(--mint); }
+
+.filter-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-count {
+  font-size: 0.75rem;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+}
+
+/* ---- PRODUCT GRID ---- */
+.shop-section { background: var(--black); }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: var(--black-2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  position: relative;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+}
+
+.product-img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--black-3);
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-img { transform: scale(1.07); }
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.badge-new { background: var(--mint); color: var(--black); }
+.badge-bestseller { background: var(--white); color: var(--black); }
+.badge-limited { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.5); }
+
+.product-quick-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(10,10,10,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 0.5rem;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-quick-view { transform: translateY(0); }
+
+.product-quick-btn {
+  flex: 1;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: var(--transition-fast);
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: none;
+}
+
+.quick-wa {
+  background: #25D366;
+  color: var(--white);
+}
+
+.quick-wa:hover { background: #1ebe57; }
+
+.quick-email {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border: 1px solid var(--border) !important;
+}
+
+.quick-email:hover { border-color: var(--mint) !important; color: var(--mint); }
+
+.product-info {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.product-category {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mint);
+  margin-bottom: 0.4rem;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.product-sizes {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.size-tag {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--gray-light);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.product-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.05em;
+}
+
+.product-price .currency {
+  font-size: 0.8rem;
+  color: var(--gray-light);
+  font-weight: 400;
+  margin-right: 2px;
+}
+
+.product-wishlist {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  background: none;
+  color: var(--gray);
+}
+
+.product-wishlist:hover,
+.product-wishlist.active {
+  border-color: var(--mint);
+  color: var(--mint);
+}
+
+/* ---- PRODUCT CARD PLACEHOLDERS (no image) ---- */
+.product-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-hoodie {
+  background: linear-gradient(135deg, #151515 0%, #1e1e1e 50%, #111111 100%);
+}
+
+.placeholder-hoodie::after {
+  content: '◈';
+  font-size: 4rem;
+  color: var(--mint-dim);
+  opacity: 0.3;
+}
+
+.placeholder-new {
+  background: linear-gradient(135deg, #0d1a15 0%, #0a1a12 50%, #0d1a15 100%);
+}
+
+/* ---- HIDDEN PRODUCTS ---- */
+.product-card.hidden {
+  display: none;
+}
+
+/* ============================================================
+   RESPONSIVE SHOP
+   ============================================================ */
+@media (max-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .filter-bar { top: 64px; }
+}
+
+@media (max-width: 480px) {
+  .product-grid { grid-template-columns: 1fr; }
+}

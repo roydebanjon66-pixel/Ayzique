@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop AYZIQUE's premium streetwear collection. Drop shoulder tees, oversized fits, premium shirts, trousers and more. Order via WhatsApp or Email." />
+  <meta name="keywords" content="AYZIQUE shop, buy streetwear, premium oversized tee, drop shoulder shirt, luxury fashion Bangladesh" />
+  <title>Shop — AYZIQUE Premium Streetwear</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">AY<span>Z</span>IQUE</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">AY<span>Z</span>IQUE</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html" class="active">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- SHOP HERO -->
+<section class="shop-hero" style="position:relative; min-height:72vh; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0;">
+  <!-- Hero Image -->
+  <img src="images/shop-hero.png" alt="AYZIQUE Shop — Premium Streetwear Collection"
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; z-index:0;" />
+  <!-- Dark gradient overlay -->
+  <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%); z-index:1;"></div>
+  <!-- Teal accent glow -->
+  <div style="position:absolute; bottom:-80px; left:50%; transform:translateX(-50%); width:600px; height:300px; background:radial-gradient(ellipse, rgba(0,220,180,0.12), transparent 70%); z-index:2; pointer-events:none;"></div>
+  <!-- Content -->
+  <div style="position:relative; z-index:3; text-align:center; padding:0 5%;">
+    <div class="shop-hero-tag reveal" style="color:rgba(255,255,255,0.7); letter-spacing:0.3em; font-size:0.75rem; font-weight:600; text-transform:uppercase; margin-bottom:1.5rem;">— The Collection —</div>
+    <h1 class="shop-hero-title reveal delay-1"
+        style="font-family:var(--font-display); font-size:clamp(3rem,8vw,6.5rem); font-weight:900; line-height:1; letter-spacing:-0.04em; margin-bottom:1.5rem; color:#fff;">
+      Our <em style="font-style:italic; color:var(--mint);">Products</em>
+    </h1>
+    <p class="shop-hero-sub reveal delay-2"
+       style="font-size:clamp(0.9rem,1.5vw,1.1rem); color:rgba(255,255,255,0.7); max-width:500px; margin:0 auto 2.5rem; line-height:1.7;">
+      Every piece is crafted with premium materials, designed to elevate your everyday aesthetic.
+    </p>
+    <div class="reveal delay-3">
+      <a href="#productGrid" style="display:inline-block; border:1px solid rgba(255,255,255,0.4); color:#fff; padding:0.85rem 2.5rem; font-size:0.78rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; text-decoration:none; backdrop-filter:blur(8px); background:rgba(255,255,255,0.06); border-radius:2px; transition:all 0.3s ease;" onmouseover="this.style.background='rgba(0,220,180,0.15)';this.style.borderColor='var(--mint)';this.style.color='var(--mint)'" onmouseout="this.style.background='rgba(255,255,255,0.06)';this.style.borderColor='rgba(255,255,255,0.4)';this.style.color='#fff'">Browse Collection ↓</a>
+    </div>
+  </div>
+  <!-- Bottom fade into page -->
+  <div style="position:absolute; bottom:0; left:0; right:0; height:120px; background:linear-gradient(to bottom, transparent, var(--black)); z-index:4;"></div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filterBar">
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-filter="all">All Products</button>
+    <button class="filter-tab" data-filter="vintage">Vintage Tees</button>
+    <button class="filter-tab" data-filter="dropshoulder">Drop Shoulder</button>
+    <button class="filter-tab" data-filter="oversized">Oversized</button>
+    <button class="filter-tab" data-filter="shirts">Shirts</button>
+    <button class="filter-tab" data-filter="pants">Trousers</button>
+    <button class="filter-tab" data-filter="new">New Collection</button>
+  </div>
+  <div class="filter-right">
+    <span class="filter-count">14 Products</span>
+  </div>
+</div>
+
+<!-- PRODUCT GRID -->
+<section class="section shop-section">
+  <div class="product-grid" id="productGrid">
+
+    <!-- Product: Neymar Jr Vintage Tee -->
+    <div class="product-card reveal delay-1"
+         data-category="vintage dropshoulder new"
+         data-product="Neymar Jr &quot;LOYALTY&quot; Vintage Bootleg Tee"
+         data-price="৳1,499"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-neymar.png" alt="Neymar Jr Vintage Bootleg Tee" class="product-img" />
+        <div class="product-badge badge-new">New Release</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Vintage Tees</div>
+        <div class="product-name">Neymar Jr "LOYALTY" Vintage Bootleg Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,499</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product: Ronaldo Vintage Tee -->
+    <div class="product-card reveal delay-2"
+         data-category="vintage dropshoulder new"
+         data-product="Ronaldo &quot;CR7&quot; Vintage Bootleg Tee"
+         data-price="৳1,499"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-ronaldo.png" alt="Ronaldo CR7 Vintage Bootleg Tee" class="product-img" />
+        <div class="product-badge badge-new">Trending</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Vintage Tees</div>
+        <div class="product-name">Ronaldo "CR7" Vintage Bootleg Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,499</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product: Messi Vintage Tee -->
+    <div class="product-card reveal delay-3"
+         data-category="vintage dropshoulder new"
+         data-product="Messi &quot;10&quot; Vintage Bootleg Tee"
+         data-price="৳1,499"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-messi.png" alt="Messi 10 Vintage Bootleg Tee" class="product-img" />
+        <div class="product-badge badge-new">Limited</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Vintage Tees</div>
+        <div class="product-name">Messi "10" Vintage Bootleg Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,499</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product: Orange Hustle Tee -->
+    <div class="product-card reveal delay-1"
+         data-category="dropshoulder new"
+         data-product="Orange &quot;Hustle&quot; Oversized Tee"
+         data-price="৳1,399"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-hustle.png" alt="Orange Hustle Graphic Tee" class="product-img" />
+        <div class="product-badge badge-new">New Fit</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Drop Shoulder</div>
+        <div class="product-name">Orange "Hustle" Graphic Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,399</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product: Burgundy Washed Tee -->
+    <div class="product-card reveal delay-2"
+         data-category="dropshoulder"
+         data-product="Burgundy Washed Drop Shoulder Tee"
+         data-price="৳1,299"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-burgundy.png" alt="Burgundy Washed Drop Shoulder Tee" class="product-img" />
+        <div class="product-badge badge-bestseller">Trending</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Drop Shoulder</div>
+        <div class="product-name">Burgundy Washed Drop Shoulder Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,299</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product: Brown Cybear Tee -->
+    <div class="product-card reveal delay-3"
+         data-category="dropshoulder new"
+         data-product="Brown &quot;Cyborg Bear&quot; Oversized Tee"
+         data-price="৳1,399"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-cybear.png" alt="Brown Cyborg Bear Tee" class="product-img" />
+        <div class="product-badge badge-new">New Fit</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Drop Shoulder</div>
+        <div class="product-name">Brown "Cyborg Bear" Graphic Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,399</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 1: Drop Shoulder Black -->
+    <div class="product-card reveal delay-1"
+         data-category="dropshoulder new"
+         data-product="Drop Shoulder Tee — Matte Black"
+         data-price="৳1,299"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-dropshoulder.png" alt="Drop Shoulder Tee Matte Black" class="product-img" />
+        <div class="product-badge badge-new">New</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Drop Shoulder</div>
+        <div class="product-name">AYZIQUE Drop Shoulder Tee — Matte Black</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,299</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2: Oversized White -->
+    <div class="product-card reveal delay-2"
+         data-category="oversized"
+         data-product="Oversized Tee — Off White"
+         data-price="৳1,199"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-oversized.png" alt="Oversized Tee Off White" class="product-img" />
+        <div class="product-badge badge-bestseller">Bestseller</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Oversized</div>
+        <div class="product-name">AYZIQUE Oversized Tee — Off White</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,199</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3: Premium Shirt -->
+    <div class="product-card reveal delay-3"
+         data-category="shirts"
+         data-product="Premium Minimal Shirt — Cream"
+         data-price="৳1,699"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-shirt.png" alt="Premium Minimal Shirt Cream" class="product-img" />
+        <div class="product-badge badge-limited">Limited</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Shirts</div>
+        <div class="product-name">AYZIQUE Premium Minimal Shirt — Cream</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,699</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4: Wide Leg Trousers -->
+    <div class="product-card reveal delay-4"
+         data-category="pants new"
+         data-product="Wide Leg Trousers — Charcoal"
+         data-price="৳1,999"
+         data-sizes="28,30,32,34,36">
+      <div class="product-img-wrap">
+        <img src="images/product-trousers.png" alt="Wide Leg Trousers Charcoal" class="product-img" />
+        <div class="product-badge badge-new">New</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Trousers</div>
+        <div class="product-name">AYZIQUE Wide Leg Trousers — Charcoal</div>
+        <div class="product-sizes">
+          <span class="size-tag">28</span><span class="size-tag">30</span><span class="size-tag">32</span><span class="size-tag">34</span><span class="size-tag">36</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,999</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5: Drop Shoulder Olive -->
+    <div class="product-card reveal delay-1"
+         data-category="dropshoulder oversized new"
+         data-product="AYZIQUE Olive Oversized Drop Shoulder Tee"
+         data-price="৳1,299"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-olive.png" alt="AYZIQUE Olive Oversized Drop Shoulder Tee" class="product-img" />
+        <div class="product-badge badge-new">New</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Drop Shoulder</div>
+        <div class="product-name">AYZIQUE Olive Oversized Drop Shoulder Tee</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,299</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6: Signature Hoodie -->
+    <div class="product-card reveal delay-2"
+         data-category="oversized new"
+         data-product="AYZIQUE Signature Heavyweight Hoodie — Black"
+         data-price="৳2,499"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-hoodie.png" alt="AYZIQUE Signature Heavyweight Hoodie Black" class="product-img" />
+        <div class="product-badge badge-new">New</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Oversized</div>
+        <div class="product-name">AYZIQUE Signature Heavyweight Hoodie — Black</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>2,499</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7: Cargo Trousers -->
+    <div class="product-card reveal delay-3"
+         data-category="pants new"
+         data-product="AYZIQUE Premium Cargo Joggers — Black"
+         data-price="৳2,199"
+         data-sizes="28,30,32,34,36">
+      <div class="product-img-wrap">
+        <img src="images/product-cargo.png" alt="AYZIQUE Premium Cargo Joggers Black" class="product-img" />
+        <div class="product-badge badge-bestseller">Bestseller</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Trousers</div>
+        <div class="product-name">AYZIQUE Premium Cargo Joggers — Black</div>
+        <div class="product-sizes">
+          <span class="size-tag">28</span><span class="size-tag">30</span><span class="size-tag">32</span><span class="size-tag">34</span><span class="size-tag">36</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>2,199</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8: Linen Shirt -->
+    <div class="product-card reveal delay-4"
+         data-category="shirts new"
+         data-product="AYZIQUE Relaxed Linen Shirt — Stone Beige"
+         data-price="৳1,799"
+         data-sizes="S,M,L,XL,XXL">
+      <div class="product-img-wrap">
+        <img src="images/product-linen.png" alt="AYZIQUE Relaxed Linen Shirt Stone Beige" class="product-img" />
+        <div class="product-badge badge-new">New</div>
+        <div class="product-quick-view">
+          <button class="product-quick-btn quick-wa">📲 WhatsApp</button>
+          <button class="product-quick-btn quick-email">✉ Email</button>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Shirts</div>
+        <div class="product-name">AYZIQUE Relaxed Linen Shirt — Stone Beige</div>
+        <div class="product-sizes">
+          <span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span><span class="size-tag">XXL</span>
+        </div>
+        <div class="product-price-row">
+          <div class="product-price"><span class="currency">৳</span>1,799</div>
+          <button class="product-wishlist" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /product-grid -->
+</section>
+
+<!-- ORDER SECTION CTA -->
+<section style="background:var(--black-2); padding:5rem 5%; text-align:center; border-top:1px solid var(--border);">
+  <div class="reveal">
+    <span class="section-tag">Order Process</span>
+    <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;letter-spacing:-0.02em;margin:1rem 0;">How to Order</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:900px;margin:3rem auto 0;text-align:left;" class="reveal delay-2">
+    <div class="glass-card" style="padding:2rem;">
+      <div style="font-size:2rem;margin-bottom:1rem;">01</div>
+      <div style="font-size:0.85rem;font-weight:700;letter-spacing:0.05em;margin-bottom:0.5rem;color:var(--mint);">Choose Product</div>
+      <div style="font-size:0.88rem;color:var(--gray);line-height:1.7;">Browse our collection and select the product and size you want.</div>
+    </div>
+    <div class="glass-card" style="padding:2rem;">
+      <div style="font-size:2rem;margin-bottom:1rem;">02</div>
+      <div style="font-size:0.85rem;font-weight:700;letter-spacing:0.05em;margin-bottom:0.5rem;color:var(--mint);">Click Order</div>
+      <div style="font-size:0.88rem;color:var(--gray);line-height:1.7;">Hit WhatsApp or Email — your order details auto-fill and send instantly.</div>
+    </div>
+    <div class="glass-card" style="padding:2rem;">
+      <div style="font-size:2rem;margin-bottom:1rem;">03</div>
+      <div style="font-size:0.85rem;font-weight:700;letter-spacing:0.05em;margin-bottom:0.5rem;color:var(--mint);">We Deliver</div>
+      <div style="font-size:0.88rem;color:var(--gray);line-height:1.7;">We confirm your order and deliver to your door across Bangladesh.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">AY<span>Z</span>IQUE</div>
+      <p class="footer-desc">Premium streetwear brand crafting elevated essentials for the modern individual.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="https://wa.me/8801XXXXXXXXX" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Shop</div>
+      <ul>
+        <li><a href="shop.html">Drop Shoulder</a></li>
+        <li><a href="shop.html">Oversized Tees</a></li>
+        <li><a href="shop.html">Premium Shirts</a></li>
+        <li><a href="shop.html">Trousers</a></li>
+        <li><a href="shop.html">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Brand</div>
+      <ul>
+        <li><a href="about.html">About AYZIQUE</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html">Our Values</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp Order</a></li>
+        <li><a href="mailto:orders@ayzique.com">Email Order</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AYZIQUE. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Place Your Order</h2>
+      <button class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-product-name">Product Name</div>
+    <div class="form-group">
+      <label class="form-label" for="orderName">Your Full Name *</label>
+      <input class="form-input" type="text" id="orderName" placeholder="Enter your full name" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderPhone">Phone Number *</label>
+      <input class="form-input" type="tel" id="orderPhone" placeholder="+880 XXXX XXXXXX" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderSize">Select Size *</label>
+      <select class="form-input form-select" id="orderSize">
+        <option value="">Select Size</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderQty">Quantity</label>
+      <input class="form-input" type="number" id="orderQty" min="1" max="10" value="1" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="orderNotes">Delivery Address / Notes</label>
+      <textarea class="form-input form-textarea" id="orderNotes" placeholder="Your delivery address and any special notes..."></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-whatsapp" id="sendWhatsapp"><span>📲 Order via WhatsApp</span></button>
+      <button class="btn btn-email" id="sendEmail"><span>✉ Order via Email</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

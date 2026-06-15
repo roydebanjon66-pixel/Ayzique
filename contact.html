@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact AYZIQUE — Reach out for order inquiries, collaborations, or general questions. Order via WhatsApp or Email." />
+  <meta name="keywords" content="Contact AYZIQUE, customer support, email order, WhatsApp order Bangladesh" />
+  <title>Contact Us — AYZIQUE Premium Streetwear</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-logo">AY<span>Z</span>IQUE</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">AY<span>Z</span>IQUE</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lookbook.html">Lookbook</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+  <div class="contact-hero-bg"></div>
+  <div class="contact-hero-pattern"></div>
+  <div class="contact-hero-glow"></div>
+  <div class="contact-hero-content">
+    <span class="contact-hero-tag reveal">— Support & Inquiries —</span>
+    <h1 class="contact-hero-title reveal delay-1">Get in <em>Touch.</em></h1>
+    <p class="contact-hero-sub reveal delay-2">We are here to assist you with orders, feedback, or general questions.</p>
+  </div>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section class="section contact-section">
+  <div class="contact-grid">
+    
+    <!-- Left: Info & FAQ -->
+    <div class="contact-info-col reveal-left">
+      <span class="section-tag">Direct Lines</span>
+      <h2 style="font-family:var(--font-display); font-size:2rem; font-weight:800; margin-bottom:2rem;">Connect With Us</h2>
+      
+      <div class="contact-cards-grid">
+        <a href="https://wa.me/8801XXXXXXXXX" class="contact-detail-card glass-card">
+          <div class="contact-card-icon">💬</div>
+          <div>
+            <h3 class="contact-card-title">WhatsApp Order</h3>
+            <p class="contact-card-desc">Click to chat instantly and place your order.</p>
+          </div>
+        </a>
+        
+        <a href="mailto:orders@ayzique.com" class="contact-detail-card glass-card">
+          <div class="contact-card-icon">✉</div>
+          <div>
+            <h3 class="contact-card-title">Email Inquiries</h3>
+            <p class="contact-card-desc">Send us an email at orders@ayzique.com</p>
+          </div>
+        </a>
+        
+        <div class="contact-detail-card glass-card">
+          <div class="contact-card-icon">📸</div>
+          <div>
+            <h3 class="contact-card-title">Instagram DM</h3>
+            <p class="contact-card-desc">Follow and message us @ayzique</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-container" id="faq" style="margin-top:4rem;">
+        <span class="section-tag">Help Desk</span>
+        <h2 style="font-family:var(--font-display); font-size:2rem; font-weight:800; margin-bottom:2rem;">Frequently Asked Questions</h2>
+        
+        <div class="faq-item glass-card">
+          <h3 class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I place an order? <span>+</span></h3>
+          <div class="faq-answer">
+            <p>Simply click on the product you like on the Shop page, select WhatsApp or Email ordering, fill out your size, address, and quantity in the popup, and hit submit. Your order details will be pre-filled and sent to us immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question" onclick="this.parentElement.classList.toggle('open')">What payment methods do you accept? <span>+</span></h3>
+          <div class="faq-answer">
+            <p>We accept Cash on Delivery (COD) across Bangladesh, as well as bKash, Nagad, and bank transfers for advance payments. We'll align payment details during our WhatsApp/Email chat.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question" onclick="this.parentElement.classList.toggle('open')">How long does shipping take? <span>+</span></h3>
+          <div class="faq-answer">
+            <p>Deliveries inside Dhaka usually take 24 to 48 hours. Deliveries outside Dhaka take 2 to 4 business days via courier services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right: Form -->
+    <div class="contact-form-col reveal-right">
+      <div class="glass-card" style="padding:3rem 2.5rem; border:1px solid var(--border-mint);">
+        <span class="section-tag" style="color:var(--mint);">Write to Us</span>
+        <h2 style="font-family:var(--font-display); font-size:2rem; font-weight:800; margin-bottom:2rem; letter-spacing:-0.02em;">Send a Message</h2>
+        
+        <form id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="cName">Your Name *</label>
+            <input class="form-input" type="text" id="cName" placeholder="Enter your name" required />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="cPhone">Phone Number *</label>
+            <input class="form-input" type="tel" id="cPhone" placeholder="Enter phone number" required />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="cEmail">Email Address *</label>
+            <input class="form-input" type="email" id="cEmail" placeholder="Enter your email" required />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="cMessage">Message *</label>
+            <textarea class="form-input form-textarea" id="cMessage" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          
+          <button class="btn btn-primary" type="submit" style="width:100%; height:3.5rem; margin-top:1.5rem;">
+            <span>Send Message via Email</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">AY<span>Z</span>IQUE</div>
+      <p class="footer-desc">Premium streetwear brand crafting elevated essentials for the modern individual.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="https://wa.me/8801XXXXXXXXX" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Shop</div>
+      <ul>
+        <li><a href="shop.html">Drop Shoulder</a></li>
+        <li><a href="shop.html">Oversized Tees</a></li>
+        <li><a href="shop.html">Premium Shirts</a></li>
+        <li><a href="shop.html">Trousers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Brand</div>
+      <ul>
+        <li><a href="about.html">About AYZIQUE</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html">Our Values</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp Order</a></li>
+        <li><a href="mailto:orders@ayzique.com">Email Order</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AYZIQUE. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

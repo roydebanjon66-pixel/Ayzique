@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AYZIQUE Streetwear Lookbook — Browse our signature collection, urban lifestyle photography, and editorial campaigns." />
+  <meta name="keywords" content="AYZIQUE lookbook, streetwear campaign, fashion editorial, urban lifestyle photography" />
+  <title>Lookbook — AYZIQUE Premium Streetwear</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-logo">AY<span>Z</span>IQUE</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">AY<span>Z</span>IQUE</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lookbook.html" class="active">Lookbook</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- LOOKBOOK HERO -->
+<section class="lookbook-hero">
+  <div class="lookbook-hero-bg"></div>
+  <div class="lookbook-hero-pattern"></div>
+  <div class="lookbook-hero-glow"></div>
+  <div class="lookbook-hero-content">
+    <h1 class="lookbook-hero-title reveal delay-1">LOOKBOOK</h1>
+    <p class="lookbook-hero-sub reveal delay-2">Discover our latest collections through timeless visuals and modern aesthetics.</p>
+    <div style="margin-top: 2.5rem; display: flex; justify-content: center; align-items: center;" class="reveal delay-3">
+      <button class="lookbook-play-btn" aria-label="Play Campaign Video">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="margin-left: 4px;">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK GALLERY SECTION -->
+<section class="section lookbook-cats-section">
+  <div class="lookbook-cats reveal">
+    <button class="lookbook-cat-btn active" data-filter="all">Urban Collection <span style="font-size:0.65rem; opacity:0.5; font-weight:400; font-family:var(--font-main);">01</span></button>
+    <button class="lookbook-cat-btn" data-filter="campaign">Minimal Collection <span style="font-size:0.65rem; opacity:0.5; font-weight:400; font-family:var(--font-main);">02</span></button>
+    <button class="lookbook-cat-btn" data-filter="street">Everyday Essentials <span style="font-size:0.65rem; opacity:0.5; font-weight:400; font-family:var(--font-main);">03</span></button>
+    <button class="lookbook-cat-btn" data-filter="signature">Signature Oversized <span style="font-size:0.65rem; opacity:0.5; font-weight:400; font-family:var(--font-main);">04</span></button>
+  </div>
+
+  <div class="masonry-grid" id="lookbookGrid">
+    
+    <!-- Item 1 -->
+    <div class="masonry-item reveal-scale campaign" data-category="campaign" data-lightbox="images/hero.png">
+      <div class="masonry-img-wrap">
+        <img src="images/hero.png" alt="Streetwear Campaign Hero" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Campaign</span>
+            <h3 class="masonry-title">Elevated Essentials 2025</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 (Neymar) -->
+    <div class="masonry-item reveal-scale signature" data-category="signature" data-lightbox="images/product-neymar.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-neymar.png" alt="Neymar Vintage Tee Mockup" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Signature Series</span>
+            <h3 class="masonry-title">Neymar Jr "LOYALTY" Bootleg</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-dropshoulder.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-dropshoulder.png" alt="Drop Shoulder T-shirt flatlay" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Drop Shoulder Black Flatlay</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 (Ronaldo) -->
+    <div class="masonry-item reveal-scale signature" data-category="signature" data-lightbox="images/product-ronaldo.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-ronaldo.png" alt="Ronaldo Vintage Tee Mockup" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Signature Series</span>
+            <h3 class="masonry-title">Ronaldo "CR7" Vintage Wash</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="masonry-item reveal-scale campaign" data-category="campaign" data-lightbox="images/about-brand.png">
+      <div class="masonry-img-wrap">
+        <img src="images/about-brand.png" alt="Urban Streetwear Campaign" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Campaign</span>
+            <h3 class="masonry-title">Urban Explorer Campaign</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 (Messi) -->
+    <div class="masonry-item reveal-scale signature" data-category="signature" data-lightbox="images/product-messi.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-messi.png" alt="Messi Vintage Tee Mockup" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Signature Series</span>
+            <h3 class="masonry-title">Messi "10" Bootleg</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-shirt.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-shirt.png" alt="Cream Shirt Flatlay" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Minimal Button-Up Styling</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-trousers.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-trousers.png" alt="Charcoal Trousers Flatlay" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Wide Leg Charcoal Trouser</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 9 (Hustle) -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-hustle.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-hustle.png" alt="Orange Hustle Drop Shoulder Tee on Model" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Orange "Hustle" Fit</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 10 (Burgundy) -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-burgundy.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-burgundy.png" alt="Burgundy Washed Drop Shoulder Tee on Model" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Burgundy Washed Minimal</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 11 (Cybear) -->
+    <div class="masonry-item reveal-scale street" data-category="street" data-lightbox="images/product-cybear.png">
+      <div class="masonry-img-wrap">
+        <img src="images/product-cybear.png" alt="Brown Cyborg Bear Tee on Model" class="masonry-img" />
+        <div class="masonry-overlay">
+          <div class="masonry-info">
+            <span class="masonry-tag">Street Style</span>
+            <h3 class="masonry-title">Brown "Cyborg Bear" Street</h3>
+          </div>
+          <span class="masonry-zoom">⊕</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">✕</button>
+  <div class="lightbox-content">
+    <img src="" alt="Zoomed View" class="lightbox-img" />
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">AY<span>Z</span>IQUE</div>
+      <p class="footer-desc">Premium streetwear brand crafting elevated essentials for the modern individual.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="https://wa.me/8801XXXXXXXXX" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Shop</div>
+      <ul>
+        <li><a href="shop.html">Drop Shoulder</a></li>
+        <li><a href="shop.html">Oversized Tees</a></li>
+        <li><a href="shop.html">Premium Shirts</a></li>
+        <li><a href="shop.html">Trousers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Brand</div>
+      <ul>
+        <li><a href="about.html">About AYZIQUE</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html">Our Values</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp Order</a></li>
+        <li><a href="mailto:orders@ayzique.com">Email Order</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AYZIQUE. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
